@@ -1,6 +1,35 @@
 .about{
+    padding-top: 10rem;
 
     &__contents{
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+        margin: 8rem 11rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         
+
+        &__text{
+            align-self: center;
+            margin-left: 3rem;
+            margin-right: 1.5rem;
+
+            &--main{
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+
+            &--sub{
+                font-size: 1.5rem;
+                line-height: 1.5;
+                font-weight: 200;
+            }
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 }
