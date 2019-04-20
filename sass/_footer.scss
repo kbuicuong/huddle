@@ -1,0 +1,73 @@
+.footer{
+    background-color: #333;
+    padding: 10rem 0 ;
+
+    &__logo{
+        margin-left: 7rem;
+        color: #fff;
+    }
+
+    &__contents{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        justify-items: center;
+
+        &__contacts{
+            margin-top: 2rem;
+            &--item{
+                display: flex;
+
+                &:not(:last-child){
+                    margin-bottom: 1.5rem;
+                }
+                
+                &--icon{
+
+                }
+
+                &--text{
+                    margin-left: 1rem;
+                    color: #eee;
+                    align-self: center;
+                }
+            }
+        }
+
+        &__links{
+            margin-top: 1rem;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(10rem, 1fr));
+            margin-top: 2rem;
+
+            &--item{
+
+                &:not(:last-child){
+                    margin-bottom: 2rem;
+                }
+
+                &--link:link,
+                &--link:visited{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #eee;
+                }
+
+
+            }
+        }
+            
+        &__social{
+            margin-top: 2rem;
+            &--icon{
+                color: #eee;
+                font-size: 2rem;
+
+                &:not(:last-child){
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+
+    }
+}
